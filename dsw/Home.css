@@ -1,0 +1,600 @@
+*{
+    padding:0px;
+    margin:0px;
+    list-style-type: none;
+    font-family: candara;
+}
+header,nav,article,section,footer,aside{
+    display: block; /*Displays in form of blocks all the tags*/
+}
+body{
+    background-color: white;
+}
+/*----------------------------------BUTTONS----------------------------------------*/
+.Head_button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgba(255,255,255,0.0);/* #83859A;*/
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 15px 32px;
+  font-size: 16px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.Head_button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.Head_button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.Head_button:hover span {
+  padding-right: 25px;
+}
+.Head_button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*---------------------------------BUTTONS-----------------------------------------*/
+
+/*input[type=text], input[type=password], input[type=date] -*/
+.a1{
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px 0px;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.Login {
+    float: right;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.0);/* #83859A;*/
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 35px 32px;
+    font-size: 16px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.submit{
+    float: left;
+    border-radius: 4px;
+    background-color: grey;
+    font-size: 16px;
+    padding: 12px;
+    margin-right: 20px;
+    border: 1px solid black;
+}
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    color: black;
+}
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+    border-radius: 10px;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.container {
+    padding: 16px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: Constantia;
+}
+
+span.psw {
+    float: right;
+    padding-top: 10px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(255,255,255,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #B5A2A2;/*#c2c2d6;*/
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 70%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+.header{
+    position: fixed;
+    width: 100%;
+/*    border-bottom : 2px solid black;*/
+    background: black;/*linear-gradient(to right, black 20%, rgba(255,255,255,0.9));*/
+}
+.logo{
+    height:94px;
+    width :180px;
+    float:left;
+    clear: both;
+ /*   border-right: 1px solid black;*/
+}
+.mySlides{
+  position: relative;
+  width: 100%;
+}
+
+.mySlides h2{
+  position: absolute;
+  z-index: -1;
+  top: 375px;
+  width: 100%-250px;
+  font-size: 65px;
+  color:#f9f9ed;
+  margin-left: 200px;
+}
+.mySlides p{
+  margin-left: 200px;
+  position: absolute;
+  z-index: -1;
+  top: 445px;
+  width: 100%-250px;
+  font-size: 35px;
+  color: #f9f9ed;
+}
+.img1{
+    margin-top: 90px;
+    position: absolute;
+    z-index:-1;
+    float: left;
+    width: 100%;
+}
+.Left{
+    float:left;
+    width:500px;
+}
+.Right{
+    float: left;
+    width: 200px;
+}
+.top_nav ul li{
+    padding:22px 20px 10px 20px;
+    float: left;
+    color:white;
+}
+.login { float: right;}
+.login ul li{
+    padding: 22px 20px 10px 20px;
+    float: left;
+}
+.Page_foot{
+    position: absolute;
+    z-index: 0;
+    clear: both;
+    text-align: center;
+    color: white;
+}
+#seperator{
+  font-size: 50px;
+  position: absolute;
+  z-index: -1;
+}
+#sub1{
+  margin-left: 200px;
+  position: absolute;
+  z-index: -1;
+  top: 150px;
+  width: 100%-250px;
+  color: white;
+  font-size: 25px;
+  margin-top: 400px;
+}
+/*___________________________________________________________________________________________*/
+
+
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  z-index: -1;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    float: left;
+  height: 13px;
+  width: 13px;
+  margin: 2px 2px;
+  position: absolute;
+  z-index: 2;
+ /* background-color: yellow;*/
+    opacity: 0;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  /*margin-top: 1100px;*/
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/*_______________________________________________________________________*/
+.left_arrow {
+    margin-top: 450px;
+    position: absolute;
+    z-index: 1;
+    padding:30px;
+    background-color: transparent;
+    font-size: 80px;
+    cursor: pointer;
+}
+.right_arrow{
+    float: right;
+    clear: both;
+    margin-top: 450px;
+    margin-left: 93.79%;
+    position: absolute;
+    z-index: 1;
+    padding:30px;
+    background-color: transparent;
+    font-size: 80px;
+    cursor: pointer;
+}
+.main_left{
+    padding: 100px 327px 100px 326px;
+  margin-top:1139px;
+  margin-left: 0px;
+  float: left;
+  height:auto;
+  clear: both;
+  width: 100%-100px;
+  position: absolute;
+  z-index: -1;
+  background-color: #eaedc0;
+  border-bottom: :1px solid black;
+  align-content: center;
+}
+
+.pick_dest{
+    width                    : 250px;
+    height                   : 35px;
+    padding-right            : 20pt;
+    text-indent              : 4pt;
+    text-align               : left;
+    vertical-align           : middle;
+    border                   : 1px solid #acacac;
+    border-radius            : 2px;
+    appearance               : none;  /*IMPORTANT*/
+    font-family              : Arial,  Calibri, Tahoma, Verdana;
+    font-size                : 15pt;
+    font-weight              : 500;
+    color                    : #000099;
+    cursor                   : pointer;
+    outline
+}
+select .pick_dest option{
+    padding             : 4px 5px 4px 5px;
+    font-size           : 20px;
+    font-weight         : normal;
+}
+select .pick_dest option[selected]{ font-weight:bold}
+select .pick_dest option:nth-child(even) { background-color:#f5f5f5; }
+select .pick_dest:hover {font-weight: 700;}
+select .pick_dest:focus {box-shadow: inset 0 0 5px #000099; font-weight: 600;}
+
+.booking{
+    font-size: 25px;
+    font-family: veranda;
+}
+.div{
+    float: left;
+    margin-right: 47px;
+}
+.book{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.Check_avail{
+    border: 2px solid grey;
+    font-size: 20px;
+    width: 300px;
+    padding: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.check{
+    margin-top: 100px;
+    margin-left: 520px;
+}
+
+.main_right{
+  margin-top:1650px;
+  padding: 100px 0px 100px 330px;
+  margin-left: 0px;
+  float: left;
+  height:412px;
+  clear: both;
+  width: 100%-100px;
+  position: absolute;
+  z-index: -1;
+  align-content: center;
+  background-color:white;
+}
+
+.main_right_1{
+  margin-top:1650px;
+  padding: 100px 330px 100px 0px;
+  float:right;
+  height:412px;
+  margin-left: 1100px;
+  clear: both;
+  width: auto;
+  position: absolute;
+  z-index: -1;
+  align-content: center;
+  background-color: white;
+}
+.inside_right_main{
+    margin-right: 10px;
+    padding: 20px;
+    border: 2px solid black;
+    background-color: #fcfcf7;
+}
+.lux1{
+    margin-top: 10px;
+    font-size: 34px;
+    text-align: center;
+    clear: both;
+}
+.lux2{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 28px;
+    clear: both;
+}
+.Lower{
+    margin-top: 2262px;
+    padding: 0px;
+    position: absolute;
+    z-index: -1;
+    background-color: #fffcf4;
+}
+.lower_head{
+    padding: 50px 688px 50px 689px;
+    background-color: #fffcf4;
+}
+.lower_sec{
+   padding: 0 10px 200px 210px;
+  margin-left: 0px;
+  float: left;
+  height:620px;
+  clear: both;
+  width: 640px;/*100%-100px;*/
+  position: absolute;
+  z-index: -1;
+  align-content: center;
+  background-color: #fffcf4;
+}
+.lower_sec1{
+  padding: 0 192px 200px 200px;
+  float:right;
+  height:620px;
+  margin-left: 857px;
+  margin-right: 00px;
+  clear: both;
+  width: auto;
+  position: absolute;
+  z-index: -1;
+  align-content: center;
+  background-color: #fffcf4;
+  border-bottom: 1px solid blue;
+}
+.foot{
+    padding: 50px;
+    width: 1799px;
+    height: 170px;
+    color: white;
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    margin-top: 3270px;
+}
+.lux3{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 28px;
+    float: left;
+    margin-right: 50px;
+    color: white;
+    text-decoration: none;
+}
+.lux4{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 28px;
+    float: right;
+    margin-right: 50px;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    z-index: 5;
+}
+.dropdown-content a{
+    color: white;
+    padding: 20px 20px;
+    border-bottom: 1px solid white;
+    text-decoration: none;
+    display: block;
+    background-color: black;
+}
+.dropdown-content a: hover{
+    background-color: grey;
+    color: grey;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+#hiddenDivny{
+    float: left;
+    margin-right: 47px;
+}
+#hiddenDivdel{
+    float: left;
+    margin-right: 47px;
+}
+#hiddenDivpar{
+    float: left;
+    margin-right: 47px;
+}
+#hiddenDivlas{
+    float: left;
+    margin-right: 47px;
+}
+#hiddenDivshan{
+    float: left;
+    margin-right: 47px;
+}
